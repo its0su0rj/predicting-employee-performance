@@ -96,10 +96,7 @@ fig_corr, ax_corr = plt.subplots()
 sns.heatmap(corr, annot=True, ax=ax_corr)
 st.pyplot(fig_corr)
 
-# Distribution plot of predicted rating
-st.write("Distribution Plot of Predicted Rating:")
-fig_dist = ff.create_distplot([predictions], group_labels=['Predicted Rating'])
-st.plotly_chart(fig_dist)
+
 
 # Box plot of input features
 st.write("Box Plot of Input Features:")
